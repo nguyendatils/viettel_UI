@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 2</title>
+
+    <link rel="stylesheet" type="text/css" href="css/index2.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div>
+            <nav class="nav-url">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="#" class="pre-page">Trang chủ</a></li>
+                        <li><a href="#" class="this-page">Quan hệ cổ đông</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container" id="page-content">
+            <div id="myMenu" class="listMenu col-md-3">
+                <div class="left-divider"></div>
+                <ul class="my-ul-menu-lv1">
+                    <li><a href="#">Giới thiệu doanh nghiệp</a></li>
+        
+                    <!-- Button Thông tin tài chính -->
+                    <button class="dropdown-btn">Thông tin tài chính</button>
+                    <div class="dropdown-container">
+                        <ul class="my-ul-menu-lv2">
+                            <li><a href="">Link 1</a></li>
+                            <div class="row"></div>
+                            <li><a href="#">Link 2</a></li>
+                            <div class="row"></div>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <li><a class="" href="#">Đại hội đồng cổ đông</a></li>
+                    <li><a class="" href="#">Báo cáo thường niên</a></li>
+                    <li><a class="" href="">Công bố thông tin</a></li>
+        
+                    <!-- Button thông tin cổ đông -->
+                    <button class="dropdown-btn">Thông tin cổ đông</button>
+                    <div class="dropdown-container my-border">
+                        <ul class="my-ul-menu-lv2">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Button Quản trị kinh doanh -->
+                    <button class="dropdown-btn">Quản trị doanh nghiệp</button>
+                    <div class="dropdown-container">
+                        <ul class="my-ul-menu-lv2">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <li><a class="" href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 content-table">
+                <div class="row" id="table-title">
+                    <div class="news-title col-xs-7" id="title">
+                        <span>UpCOM: CTR</span>
+                    </div>
+                    <div class="news-title col-xs-5" id="update-time">
+                        <span>Cập nhật mới nhất: 14/7/2021</span>
+                    </div>
+                </div>
+                <table class="table" id="ctr-table">
+                    <thead>
+                        <tr>
+                            <th class="ctr-col-1">Giá hiện tại</th>
+                            <th class="ctr-col-2">Thay đổi</th>
+                            <th class="ctr-col-3">Giá mở cửa</th>
+                            <th class="ctr-col-4">Giá cao nhất trong ngày</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3" class="current-price"><span>69,40</span></td>
+                            <td class="ember">-0,0%</td>
+                            <td>69,40</td>
+                            <td>70,70</td>
+                        </tr>
+                        <tr>
+                            <th>Khối lượng</th>
+                            <th>Giá đóng cửa hôm trước</th>
+                            <th>Giá thấp nhất trong ngày</th>
+                        </tr>
+                        <tr>
+                            <td>24,765,602</td>
+                            <td>69,80</td>
+                            <td>68.50</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-divider"></div>
+                <div class="row">
+                    <div class="statistical col-md-6">
+                        <div id="table-title-left">
+                            <span class="col-xs-12">Thống kê</span>
+                        </div>
+                        <table class="table">
+                            <tbody>
+                                <tr class="row-1">
+                                    <td class="col-1">Giá cao nhất 52 tuần</td>
+                                    <td class="col-2">45.5</td>
+                                </tr>
+                                <tr class="row-2">
+                                    <td class="col-1">Giá thấp nhất 52 tuần</td>
+                                    <td class="col-2">6.9</td>
+                                </tr>
+                                <tr class="row-1">
+                                    <td class="col-1">Khối lượng TB 10 ngà</td>
+                                    <td class="col-2">5,924,095</td>
+                                </tr>
+                                <tr class="row-2">
+                                    <td class="col-1">Thị giá vốn (Tỷ vnd)</td>
+                                    <td class="col-2">19,392</td>
+                                </tr>
+                                <tr class="row-1">
+                                    <td class="col-1">GDDKHQ (Cổ tức tiền)</td>
+                                    <td class="col-2">12/04/2021</td>
+                                </tr>
+                                <tr class="row-2">
+                                    <td class="col-1">Số lượng CP đã phát hành</td>
+                                    <td class="col-2">220,430,169</td>
+                                </tr>
+                                <tr class="row-1">
+                                    <td class="col-1">Số lượng CP đang phát hành</td>
+                                    <td class="col-2">208,565,382</td>
+                                </tr>
+                                <tr class="row-2">
+                                    <td class="col-1">EPS (4 Quý)</td>
+                                    <td class="col-2">5,456</td>
+                                </tr>
+                                <tr class="row-1">
+                                    <td class="col-1">EPS (năm)</td>
+                                    <td class="col-2">3,322</td>
+                                </tr>
+                                <tr class="row-2">
+                                    <td class="col-1">ROA</td>
+                                    <td class="col-2">7.7%</td>
+                                </tr>
+                                <tr class="row-1">
+                                    <td class="col-1">ROE</td>
+                                    <td class="col-2">29.7%</td>
+                                </tr>
+                                <tr class="row-2">
+                                    <td class="col-1">Đòn bẩy TC</td>
+                                    <td class="col-2">4</td>
+                                </tr>
+                                <tr class="row-1">
+                                    <td class="col-1">P/E</td>
+                                    <td class="col-2">8.3%</td>
+                                </tr>
+                                <tr class="row-2">
+                                    <td class="col-1">P/B</td>
+                                    <td class="col-2">8.3%</td>
+                                </tr>
+                                <tr class="row-1">
+                                    <td class="col-1">Beta</td>
+                                    <td class="col-2">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="chart col-md-6">
+                        <div id="table-title-right">
+                            <span class="col-xs-12">
+                                <span class="red">69,40</span>
+                                <span class="ember">-0,0%</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).on('click', 'ul li', function() {
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+
+        var acc = document.getElementsByClassName("dropdown-btn");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContainer = this.nextElementSibling;
+                if (dropdownContainer.style.display === "block") {
+                    dropdownContainer.style.display = "none";
+                } else {
+                    dropdownContainer.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

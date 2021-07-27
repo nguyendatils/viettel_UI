@@ -1,0 +1,230 @@
+$redColor : #ef0126;
+$greyColor : #e6e7e9;
+
+
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Quicksand-SemiBold.ttf) format("opentype");
+}
+
+*{
+    font-family: myfont!important;
+}
+
+html, body {
+    color: #5a574f!important;
+    height: 100%;
+    margin: 0;
+}
+
+ul li a:hover {
+    text-decoration: none;
+}
+
+ul li.active a {
+    color: #da2121;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.nav-url {
+    height: 50px;
+    background-color: $greyColor;
+
+    .container {
+        .breadcrumb {
+            background-color: $greyColor;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-left: 15px;
+
+            li:not(:first-child)::before {
+                content: "►";
+                color: #3e3e3f;
+            }
+
+            li {
+                .this-page {
+                    color: $redColor;
+                }
+                .pre-page {
+                    color: #403e3f;
+                }
+                .pre-page:hover {
+                    color: $redColor;
+                }
+            }
+        }
+    }
+}
+
+#page-content {
+    padding: 40px 0 0 0;
+    justify-content: space-between;
+
+    .listMenu {
+        height: 100%;
+        top: 0;
+        left: 0;
+        /* font-size: 15px; */
+        background-color: #fff;
+
+        @mixin a-btn {
+            padding: 10px 6px 10px 0px;
+            text-decoration: none;
+            color: #818181;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+        }
+
+        a {
+            @include a-btn;
+        }
+        a:hover{
+            color: $redColor;
+        }
+
+        .left-divider {
+            border-top: 4px solid #c9c5c0;
+            margin-left: 30px;
+        }
+        .dropdown-btn{
+            @include a-btn;
+        }
+        .dropdown-btn::after{
+            content: "\002B";
+            float: right;
+        }
+        .dropdown-btn.active {
+            color: $redColor;
+        }
+        .dropdown-btn.active::after{
+            content: "\2212";
+            float: right;
+        }
+        .dropdown-btn:hover {
+            color: $redColor;
+        }
+
+        .dropdown-container {
+            display: none;
+            padding-left: 0px;
+
+            .my-ul-menu-lv2 {
+                padding-left: 0;
+
+                li {
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        button {
+            border-bottom: 1px solid #c9c5c0!important;
+        }
+
+        ul  {
+            padding-left: 30px;
+            li {
+                border-bottom: 1px solid #c9c5c0!important;
+            }
+        }
+    }
+}
+
+.content-container {
+    padding-left: 40px;
+    .row {
+        display: flex;
+        margin: 0!important;
+
+        .col-1 {
+            width: 30%;
+
+            img {
+                height: 300px;
+            }
+
+            #profile-pdf {
+                height: 50px;
+                line-height: 50px;
+                padding-right: 35px;
+
+                span {
+                    font-weight: bold;
+                    width: 70%;
+                }
+
+                #pdf-icon {
+                    text-align: right;
+                    width: 30%;
+
+                    img {
+                        height: 35px;
+                    }
+                }
+            }
+        }
+        .col-2 {
+            width: 70%;
+
+            img {
+                height: 300px;
+            }
+        }
+
+    }
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+  }
+
+  input:focus {
+      outline: none;
+  }
+
+  select:focus {
+      outline: none;
+  }
+
+
+@media(max-width: 540px) {
+    .content-table {
+        padding: 0px!important;
+    }
+}
+
+@media (max-width: 768px){
+    body {
+        font-size: 10px!important;
+    }
+}
+@media (min-width: 768px){
+    body {
+        font-size: 12px!important;
+    }
+}
+@media (min-width: 992px){
+    body {
+        font-size: 14px!important;
+    }
+}

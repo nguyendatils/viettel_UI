@@ -1,0 +1,380 @@
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Quicksand-SemiBold.ttf) format("opentype");
+}
+
+* {
+    font-family: myfont!important;
+}
+
+html,
+body {
+    color: #5a574f!important;
+    height: 100%;
+    margin: 0;
+}
+
+#content {
+    min-height: 100%;
+}
+
+.nav-url {
+    height: 50px;
+    background-color: #e6e7e9;
+}
+
+.nav-url div ul {
+    background-color: #e6e7e9;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+}
+
+.breadcrumb {
+    flex-direction: row;
+}
+
+ul.breadcrumb li a.this-page {
+    color: #ef0126;
+}
+
+ul.breadcrumb li a.pre-page {
+    color: #403e3f;
+}
+
+ul.breadcrumb li a.pre-page:hover {
+    color: #ef0126;
+}
+
+.breadcrumb li:not(:first-child)::before {
+    content: "►";
+    color: #3e3e3f;
+}
+
+#page-content {
+    padding: 40px 0 0 0;
+    justify-content: space-between;
+}
+
+.listMenu {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* font-size: 15px; */
+    background-color: #fff;
+}
+
+
+/* Style the sidenav links and the dropdown button */
+
+.listMenu a,
+.dropdown-btn {
+    padding: 10px 6px 10px 0px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* On mouse-over */
+
+.listMenu a:hover,
+.dropdown-btn:hover {
+    color: #da2121;
+}
+
+
+/* Add an active class to the active dropdown button */
+
+
+/* .active {
+    color: #da2121;
+} */
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+.dropdown-container {
+    display: none;
+    padding-left: 0px;
+}
+
+#myMenu ul li,
+#myMenu button {
+    border-bottom: 1px solid #c9c5c0!important;
+}
+
+#myMenu>ul {
+    padding-left: 30px!important;
+}
+
+.dropdown-btn.active::after {
+    content: "\2212";
+    float: right;
+}
+
+.dropdown-btn::after {
+    content: "\002B";
+    float: right;
+}
+
+ul.my-ul-menu-lv2 {
+    padding-left: 0;
+}
+
+ul.my-ul-menu-lv2 li {
+    padding-left: 15px;
+}
+
+ul li a:hover {
+    text-decoration: none;
+}
+
+ul li.active a {
+    color: #da2121;
+}
+
+.dropdown-btn.active {
+    color: #da2121;
+}
+
+li {
+    list-style-type: none;
+}
+
+.left-divider {
+    border-top: 4px solid #c9c5c0;
+    margin-left: 30px;
+}
+
+.left-tree ul {
+    padding-left: 0!important;
+}
+
+.first-lvl {
+    height: 40px;
+    border-bottom: 2px solid #bdbdbd;
+}
+
+.content-table {
+    padding: 0 45px 0 40px;
+    font-weight: bold;
+}
+
+#search-bar {
+    background-color: #E6E7E9;
+    height: 55px;
+    line-height: 45px;
+    color: rgb(32, 31, 31)!important;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#search-box {
+    border: none;
+    background-color: #ef0126;
+}
+
+#search-box::placeholder {
+    font-size: 12px;
+    font-style: italic;
+}
+
+#search-box,
+#information,
+#search-year {
+    padding: 0;
+}
+
+#search-year {
+    height: 100%;
+    background-color: #E6E7E9;
+    text-align-last: left;
+    border: none;
+    border-top-right-radius: 5px;
+    padding-left: 10px !important;
+    outline: none;
+}
+
+.header__item {
+    border: none;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    text-align: center !important;
+    font-weight: bold;
+}
+
+.title {
+    padding: 17px 0px 17px 10px !important;
+    text-align: left !important;
+}
+
+.time {
+    padding: 17px 0px 17px 10px !important;
+    text-align: center !important;
+    color: #ef0126;
+    font-weight: bold;
+}
+
+td {
+    border-bottom: 1px solid #3f3f3f !important;
+}
+
+.listMenu__icon {
+    width: 25px;
+    height: 25px;
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.listMenu__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.listMenu__mobile-nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 200px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.3s, opacity linear 0.3s;
+}
+
+.listMenu__mobile-list {
+    margin-top: 20px;
+}
+
+.mobile-nav-item {
+    padding: 10px 6px 10px 0px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown-btn.mobile-nav-item {
+    padding: 10px 6px 10px 0px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.mobile-nav-icon-close {
+    width: 16px;
+    height: 16px;
+    color: #666;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.checkbox-bar:checked~.listMenu__overlay {
+    display: block;
+}
+
+.checkbox-bar:checked~.listMenu__mobile-nav {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.span_quyIV-1 {
+    display: block;
+}
+
+.span_quyIV-2 {
+    display: none;
+}
+
+
+/*  Moblie  width < 740 px */
+
+@media (max-width: 46.1875em) {
+    body {
+        font-size: 10px !important;
+    }
+    .navbar__list-header {
+        height: 50px;
+        background-color: #e6e7e9;
+    }
+    #search-bar {
+        margin-top: 0;
+    }
+    .title {
+        width: 100px !important;
+        padding-left: 5px !important;
+    }
+    .listMenu {
+        display: none;
+    }
+    .listMenu__icon {
+        display: block;
+    }
+    .pre-page-before {
+        display: none;
+    }
+    .this-page-after {
+        display: block;
+        flex: 1;
+    }
+    .span_quyIV-1 {
+        display: none;
+    }
+    .span_quyIV-2 {
+        display: block;
+    }
+    .breadcrumb {
+        display: none;
+    }
+    .time {
+        font-size: 8px;
+    }
+}
+
+
+/* Tablet width >=740 px and <1024 px */
+
+@media (min-width: 46.24em) and (max-width:63.9375em) {}

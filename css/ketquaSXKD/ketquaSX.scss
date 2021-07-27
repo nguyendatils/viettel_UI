@@ -1,0 +1,170 @@
+    @font-face {
+        font-family: myfont;
+        src: url('../baocaothuongnien/Quicksand-SemiBold.ttf') format("opentype");
+    }
+    
+    * {
+        font-family: myfont;
+    }
+    
+    $colorTextHover: #ef0126;
+    $backgroundColorNav:#e6e7e9;
+    body {
+        color: #5a574f!important;
+        height: 100%;
+        margin: 0;
+        font-size: 14px;
+        li {
+            list-style: none;
+        }
+        .nav-url {
+            height: 50px;
+            background-color: $backgroundColorNav;
+            &__breadcrumb {
+                display: flex;
+                background-color: $backgroundColorNav;
+                margin-top: 8px;
+                li {
+                    &:not(:first-child) {
+                        &::before {
+                            content: "►";
+                            color: #3e3e3f;
+                        }
+                    }
+                }
+                .nav-item {
+                    text-decoration: none;
+                    margin: auto;
+                }
+                .pre-page {
+                    color: #403e3f;
+                    &:hover {
+                        color: $colorTextHover;
+                    }
+                }
+                .this-page {
+                    color: $colorTextHover;
+                }
+            }
+        }
+        $textColor: #818181;
+        .container {
+            display: flex;
+            .menu {
+                width: 256px;
+                margin-top: 40px;
+                .left-divider-top {
+                    border: 2px solid #797878;
+                    margin-left: 38px;
+                }
+                .left-divider {
+                    border-top: 1px solid #585856;
+                }
+                &__ul-item {
+                    padding: 10px 6px 10px 0px;
+                    &.active {
+                        a {
+                            color: $colorTextHover;
+                        }
+                    }
+                    a {
+                        color: $textColor;
+                        text-decoration: none;
+                        &:hover {
+                            color: $colorTextHover;
+                        }
+                    }
+                }
+                &__dropdown-btn {
+                    text-decoration: none;
+                    color: $textColor;
+                    border: none;
+                    background: none;
+                    width: 100%;
+                    text-align: left;
+                    cursor: pointer;
+                    outline: none;
+                    padding-left: 0 !important;
+                    &:hover {
+                        color: $colorTextHover;
+                    }
+                    &.active {
+                        color: $colorTextHover;
+                        &::after {
+                            content: "\2212";
+                            float: right;
+                        }
+                    }
+                    &::after {
+                        content: "\002B";
+                        float: right;
+                    }
+                }
+                .dropdown-container {
+                    display: none;
+                    ul {
+                        padding-left: 10px;
+                    }
+                }
+            }
+            $color-h-content:#ef0126;
+            .content__page {
+                width: 828px;
+                margin-top: 40px;
+                margin-left: 40px;
+                box-sizing: border-box;
+                .header__content {
+                    background-color: $color-h-content;
+                    height: 45px;
+                    line-height: 45px;
+                    color: #fff;
+                    margin: 0;
+                    @mixin border-col-head {
+                        border-right: 1px solid #fff;
+                    }
+                    &-span {
+                        background-color: $color-h-content;
+                        @include border-col-head;
+                    }
+                    &-input {
+                        border: none;
+                        background-color: $color-h-content;
+                        height: 45px;
+                        @include border-col-head;
+                    }
+                    &-year {
+                        height: 100%;
+                        background-color: $color-h-content;
+                        text-align-last: center;
+                        border: none;
+                        border-top-right-radius: 5px;
+                    }
+                }
+                .table {
+                    @mixin row_time_more {
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                    &__body {
+                        &-row {
+                            td {
+                                padding-top: 15px;
+                                padding-bottom: 15px;
+                                border-bottom: 1px solid #585856;
+                                &.row__paragraph {
+                                    text-align: left;
+                                }
+                                &.row__time {
+                                    @include row_time_more();
+                                }
+                                &.row__more {
+                                    @include row_time_more();
+                                    color: $colorTextHover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

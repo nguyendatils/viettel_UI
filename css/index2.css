@@ -1,0 +1,281 @@
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Quicksand-SemiBold.ttf) format("opentype");
+}
+
+*{
+    font-family: myfont!important;
+}
+
+html, body {
+    color: #5a574f!important;
+    height: 100%;
+    margin: 0;
+}
+
+#content {
+    min-height: 100%;
+}
+
+.nav-url {
+    height: 50px;
+    background-color: #e6e7e9;
+}
+.nav-url div ul {
+    background-color: #e6e7e9;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+}
+
+ul.breadcrumb li a.this-page {
+    color: #ef0126;
+}
+
+ul.breadcrumb li a.pre-page {
+    color: #403e3f;
+}
+ul.breadcrumb li a.pre-page:hover {
+    color: #ef0126;
+}
+
+.breadcrumb li:not(:first-child)::before {
+    content: "►";
+    color: #3e3e3f;
+}
+
+#page-content {
+    padding: 40px 0 0 0;
+    justify-content: space-between;
+}
+
+.content-table {
+    padding: 0 45px 0 40px!important;
+}
+
+
+/* CSS List Menu*/
+/*============================================================================*/
+.listMenu {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+/* Style the sidenav links and the dropdown button */
+
+.listMenu a,
+.dropdown-btn {
+    padding: 10px 6px 10px 0px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+/* On mouse-over */
+
+.listMenu a:hover,
+.dropdown-btn:hover {
+    color: #da2121;
+}
+/* Add an active class to the active dropdown button */
+/* .active {
+    color: #da2121;
+} */
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+.dropdown-container {
+    display: none;
+    padding-left: 0px;
+}
+
+#myMenu ul li, #myMenu button{
+    border-bottom: 1px solid #c9c5c0!important;
+}
+
+#myMenu > ul {
+    padding-left: 30px!important;
+}
+
+.dropdown-btn.active::after {
+    content: "\2212";
+    float: right;
+}
+
+.dropdown-btn::after {
+    content: "\002B";
+    float: right;
+}
+
+ul.my-ul-menu-lv2 {
+    padding-left: 0;
+}
+ul.my-ul-menu-lv2 li {
+    padding-left: 15px;
+}
+
+ul li a:hover{
+    text-decoration: none;
+}
+
+ul li.active a {
+    color: #da2121;
+}
+
+.dropdown-btn.active {
+    color: #da2121;
+}
+
+li {
+    list-style-type: none;
+}
+
+.left-divider {
+    border-top: 4px solid #c9c5c0;
+    margin-left: 30px;
+}
+
+/*========================================================*/
+
+table {
+    margin-bottom: 0!important;
+}
+
+#table-title {
+    background-color: #ef0126;
+    height: 45px;
+    line-height: 45px;
+    color: #fff!important;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#table-title-left {
+    background-color: #ef0126;
+    height: 45px;
+    line-height: 45px;
+    color: #fff!important;
+    margin: 0;
+    border-top-left-radius: 5px;
+}
+
+#update-time {
+    text-align: right;
+}
+
+#ctr-table {
+    border: 1px solid #fff!important;
+}
+
+#ctr-table td,#ctr-table th, .table>thead>tr>th {
+    border: 1px solid #fff!important;
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+}
+
+#ctr-table th {
+    background-color: #e6e7e9;
+}
+
+#ctr-table td {
+    background-color: #f7f7f8;
+}
+
+.ctr-col-1 {
+    width: 17%;
+}
+.ctr-col-2 {
+    width: 23%;
+}
+.ctr-col-3 {
+    width: 30%;
+}
+.ctr-col-3 {
+    width: 30%;
+}
+
+.current-price {
+    text-align: center;
+    vertical-align: middle!important;
+    font-size: 3rem;
+    color: #ef0126;
+}
+
+.table-divider {
+    height: 40px;
+}
+
+
+.red {
+    color: #ef0126!important;
+}
+
+.ember {
+    color: #f7931d!important;
+}
+
+.statistical , .chart {
+    padding: 0!important;
+}
+
+.row {
+    margin: 0!important;
+}
+
+.row-1 {
+    background-color: #e6e7e9;
+}
+.row-2 {
+    background-color: #f7f7f8;
+}
+
+.col-1 {
+    padding-left: 14px!important;
+}
+.col-2 {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 1.5rem!important;
+}
+
+.statistical td {
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
+}
+
+#table-title-right {
+    background-color: #e6e7e9;
+    height: 45px;
+    line-height: 45px;
+    margin: 0;
+    border-top-right-radius: 5px;
+}
+
+@media(max-width: 540px) {
+    .content-table {
+        padding: 0px!important;
+    }
+}
+
+@media (max-width: 768px){
+    body {
+        font-size: 10px!important;
+    }
+}
+@media (min-width: 768px){
+    body {
+        font-size: 12px!important;
+    }
+}
+@media (min-width: 992px){
+    body {
+        font-size: 14px!important;
+    }
+}

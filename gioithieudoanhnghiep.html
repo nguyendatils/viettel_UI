@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu doanh nghiệp</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/gioithieudoanhnghiep.css"/>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div>
+            <nav class="nav-url">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="#" class="pre-page">Trang chủ</a></li>
+                        <li><a href="#" class="this-page">Quan hệ cổ đông</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container" id="page-content">
+            <div id="myMenu" class="listMenu col-md-3">
+                <div class="left-divider"></div>
+                <ul class="my-ul-menu-lv1">
+                    <li><a href="#">Giới thiệu doanh nghiệp</a></li>
+        
+                    <!-- Button Thông tin tài chính -->
+                    <button class="dropdown-btn">Thông tin tài chính</button>
+                    <div class="dropdown-container">
+                        <ul class="my-ul-menu-lv2">
+                            <li><a href="#">Link 1</a></li>
+                            <div class="row"></div>
+                            <li><a href="#">Link 2</a></li>
+                            <div class="row"></div>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <li><a class="" href="#">Đại hội đồng cổ đông</a></li>
+                    <li><a class="" href="#">Báo cáo thường niên</a></li>
+                    <li><a class="" href="#">Công bố thông tin</a></li>
+        
+                    <!-- Button thông tin cổ đông -->
+                    <button class="dropdown-btn">Thông tin cổ đông</button>
+                    <div class="dropdown-container my-border">
+                        <ul class="my-ul-menu-lv2">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Button Quản trị kinh doanh -->
+                    <button class="dropdown-btn">Quản trị doanh nghiệp</button>
+                    <div class="dropdown-container">
+                        <ul class="my-ul-menu-lv2">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <li><a class="" href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 content-container">
+                <div class="row">
+                    <div id="profile" class="col-1">
+                        <div id="profile-img">
+                            <img src="static/images/viettel-profile.png">
+                        </div>
+                        <div id="profile-pdf" class="row">
+                            <span>Profile tổng công ty</span>
+                            <div id="pdf-icon"><img src="static/icons/pdf-icon.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div id="com-img" class="col-2">
+                        <img src="static/images/viettel-company.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).on('click', 'ul li', function() {
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+
+        var acc = document.getElementsByClassName("dropdown-btn");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContainer = this.nextElementSibling;
+                if (dropdownContainer.style.display === "block") {
+                    dropdownContainer.style.display = "none";
+                } else {
+                    dropdownContainer.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

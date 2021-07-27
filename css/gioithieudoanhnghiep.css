@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@font-face {
+  font-family: myfont;
+  src: url(../fonts/Quicksand-SemiBold.ttf) format("opentype");
+}
+
+* {
+  font-family: myfont !important;
+}
+
+html, body {
+  color: #5a574f !important;
+  height: 100%;
+  margin: 0;
+}
+
+ul li a:hover {
+  text-decoration: none;
+}
+
+ul li.active a {
+  color: #da2121;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-url {
+  height: 50px;
+  background-color: #e6e7e9;
+}
+
+.nav-url .container .breadcrumb {
+  background-color: #e6e7e9;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 15px;
+}
+
+.nav-url .container .breadcrumb li:not(:first-child)::before {
+  content: "►";
+  color: #3e3e3f;
+}
+
+.nav-url .container .breadcrumb li .this-page {
+  color: #ef0126;
+}
+
+.nav-url .container .breadcrumb li .pre-page {
+  color: #403e3f;
+}
+
+.nav-url .container .breadcrumb li .pre-page:hover {
+  color: #ef0126;
+}
+
+#page-content {
+  padding: 40px 0 0 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#page-content .listMenu {
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* font-size: 15px; */
+  background-color: #fff;
+}
+
+#page-content .listMenu a {
+  padding: 10px 6px 10px 0px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+#page-content .listMenu a:hover {
+  color: #ef0126;
+}
+
+#page-content .listMenu .left-divider {
+  border-top: 4px solid #c9c5c0;
+  margin-left: 30px;
+}
+
+#page-content .listMenu .dropdown-btn {
+  padding: 10px 6px 10px 0px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+#page-content .listMenu .dropdown-btn::after {
+  content: "\002B";
+  float: right;
+}
+
+#page-content .listMenu .dropdown-btn.active {
+  color: #ef0126;
+}
+
+#page-content .listMenu .dropdown-btn.active::after {
+  content: "\2212";
+  float: right;
+}
+
+#page-content .listMenu .dropdown-btn:hover {
+  color: #ef0126;
+}
+
+#page-content .listMenu .dropdown-container {
+  display: none;
+  padding-left: 0px;
+}
+
+#page-content .listMenu .dropdown-container .my-ul-menu-lv2 {
+  padding-left: 0;
+}
+
+#page-content .listMenu .dropdown-container .my-ul-menu-lv2 li {
+  padding-left: 15px;
+}
+
+#page-content .listMenu button {
+  border-bottom: 1px solid #c9c5c0 !important;
+}
+
+#page-content .listMenu ul {
+  padding-left: 30px;
+}
+
+#page-content .listMenu ul li {
+  border-bottom: 1px solid #c9c5c0 !important;
+}
+
+.content-container {
+  padding-left: 40px;
+}
+
+.content-container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 !important;
+}
+
+.content-container .row .col-1 {
+  width: 30%;
+}
+
+.content-container .row .col-1 img {
+  height: 300px;
+}
+
+.content-container .row .col-1 #profile-pdf {
+  height: 50px;
+  line-height: 50px;
+  padding-right: 35px;
+}
+
+.content-container .row .col-1 #profile-pdf span {
+  font-weight: bold;
+  width: 70%;
+}
+
+.content-container .row .col-1 #profile-pdf #pdf-icon {
+  text-align: right;
+  width: 30%;
+}
+
+.content-container .row .col-1 #profile-pdf #pdf-icon img {
+  height: 35px;
+}
+
+.content-container .row .col-2 {
+  width: 70%;
+}
+
+.content-container .row .col-2 img {
+  height: 300px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+}
+
+input:focus {
+  outline: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+@media (max-width: 540px) {
+  .content-table {
+    padding: 0px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 10px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 12px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 14px !important;
+  }
+}
+/*# sourceMappingURL=gioithieudoanhnghiep.css.map */

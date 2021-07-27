@@ -1,0 +1,340 @@
+@charset "UTF-8";
+@font-face {
+  font-family: myfont;
+  src: url(../fonts/Quicksand-SemiBold.ttf) format("opentype");
+}
+
+* {
+  font-family: myfont !important;
+}
+
+html, body {
+  color: #5a574f !important;
+  height: 100%;
+  margin: 0;
+}
+
+ul li a:hover {
+  text-decoration: none;
+}
+
+ul li.active a {
+  color: #da2121;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-url {
+  height: 50px;
+  background-color: #e6e7e9;
+}
+
+.nav-url .container .breadcrumb {
+  background-color: #e6e7e9;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 15px;
+}
+
+.nav-url .container .breadcrumb li:not(:first-child)::before {
+  content: "►";
+  color: #3e3e3f;
+}
+
+.nav-url .container .breadcrumb li .this-page {
+  color: #ef0126;
+}
+
+.nav-url .container .breadcrumb li .pre-page {
+  color: #403e3f;
+}
+
+.nav-url .container .breadcrumb li .pre-page:hover {
+  color: #ef0126;
+}
+
+#page-content {
+  padding: 40px 0 0 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#page-content .listMenu {
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* font-size: 15px; */
+  background-color: #fff;
+}
+
+#page-content .listMenu a {
+  padding: 10px 6px 10px 0px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+#page-content .listMenu a:hover {
+  color: #ef0126;
+}
+
+#page-content .listMenu .left-divider {
+  border-top: 4px solid #c9c5c0;
+  margin-left: 30px;
+}
+
+#page-content .listMenu .dropdown-btn {
+  padding: 10px 6px 10px 0px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+#page-content .listMenu .dropdown-btn::after {
+  content: "\002B";
+  float: right;
+}
+
+#page-content .listMenu .dropdown-btn.active {
+  color: #ef0126;
+}
+
+#page-content .listMenu .dropdown-btn.active::after {
+  content: "\2212";
+  float: right;
+}
+
+#page-content .listMenu .dropdown-btn:hover {
+  color: #ef0126;
+}
+
+#page-content .listMenu .dropdown-container {
+  display: none;
+  padding-left: 0px;
+}
+
+#page-content .listMenu .dropdown-container .my-ul-menu-lv2 {
+  padding-left: 0;
+}
+
+#page-content .listMenu .dropdown-container .my-ul-menu-lv2 li {
+  padding-left: 15px;
+}
+
+#page-content .listMenu button {
+  border-bottom: 1px solid #c9c5c0 !important;
+}
+
+#page-content .listMenu ul {
+  padding-left: 30px;
+}
+
+#page-content .listMenu ul li {
+  border-bottom: 1px solid #c9c5c0 !important;
+}
+
+.content-table {
+  padding: 0 45px 0 40px !important;
+}
+
+.content-table .table-divider {
+  height: 45px;
+  border-bottom: 2px solid #c9c5c0;
+}
+
+.content-table #search-bar {
+  background-color: #ef0126;
+  height: 45px;
+  line-height: 45px;
+  color: #fff !important;
+  margin: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.content-table #search-bar #information {
+  border-right: 1px solid #fff;
+  padding-left: 8px !important;
+  padding: 0;
+}
+
+.content-table #search-bar #search-box {
+  border: none;
+  background-color: #ef0126;
+  border-right: 1px solid #fff;
+  padding-left: 8px !important;
+  padding: 0;
+}
+
+.content-table #search-bar #search-box ::-webkit-input-placeholder {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.content-table #search-bar #search-box :-ms-input-placeholder {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.content-table #search-bar #search-box ::-ms-input-placeholder {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.content-table #search-bar #search-box ::placeholder {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.content-table #search-bar #search-year {
+  padding: 0;
+  height: 100%;
+  background-color: #ef0126;
+  text-align-last: center;
+  border: none;
+  border-top-right-radius: 5px;
+}
+
+.content-table #search-bar #search-year option:hover {
+  background-color: #e6e7e9 !important;
+}
+
+.content-table table {
+  margin-bottom: 0 !important;
+}
+
+.content-table table .center {
+  text-align: center !important;
+}
+
+.content-table table .red {
+  color: #ef0126 !important;
+}
+
+.content-table table thead {
+  background-color: #e6e7e9;
+}
+
+.content-table table thead .title-th {
+  width: 55% !important;
+}
+
+.content-table table thead .time-th {
+  width: 18%;
+}
+
+.content-table table thead .look-th {
+  width: 9%;
+}
+
+.content-table table thead .download-th {
+  width: 18%;
+}
+
+.content-table table thead th {
+  border-bottom: 2px solid #c9c5c0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.content-table table tbody .news-title {
+  text-align: left !important;
+  padding-left: 25px !important;
+}
+
+.content-table table tbody .time {
+  font-weight: bold;
+}
+
+.content-table table tbody td {
+  text-align: center;
+  border-bottom: 1px solid #c9c5c0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+}
+
+input:focus {
+  outline: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+@media (max-width: 540px) {
+  .content-table {
+    padding: 0px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 10px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 12px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 14px !important;
+  }
+}
+/*# sourceMappingURL=daihoidongcodong.css.map */
