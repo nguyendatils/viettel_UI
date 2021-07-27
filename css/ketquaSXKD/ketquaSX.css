@@ -173,6 +173,7 @@ body .container .content__page .table__body-row td {
 
 body .container .content__page .table__body-row td.row__paragraph {
   text-align: left;
+  padding-left: 0;
 }
 
 body .container .content__page .table__body-row td.row__time {
@@ -184,5 +185,29 @@ body .container .content__page .table__body-row td.row__more {
   text-align: center;
   font-weight: bold;
   color: #ef0126;
+}
+
+@media (max-width: 61.9375em) {
+  body .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 12px;
+  }
+  body .container .menu {
+    width: 100%;
+  }
+  body .container .menu .left-divider-top {
+    margin-left: 30px !important;
+  }
+  body .container .menu__ul-lv1 {
+    padding-left: 30px;
+  }
+  body .container .content__page {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 30px;
+  }
 }
 /*# sourceMappingURL=ketquaSX.css.map */

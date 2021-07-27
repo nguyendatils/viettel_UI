@@ -153,6 +153,7 @@
                                 border-bottom: 1px solid #585856;
                                 &.row__paragraph {
                                     text-align: left;
+                                    padding-left: 0;
                                 }
                                 &.row__time {
                                     @include row_time_more();
@@ -164,6 +165,31 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        @media (max-width:61.9375em) {
+            .container {
+                flex-direction: column;
+                font-size: 12px;
+                .menu {
+                    width: 100%;
+                    .left-divider-top {
+                        margin-left: 30px !important;
+                    }
+                    &__ul-lv1 {
+                        padding-left: 30px;
+                    }
+                }
+                .content__page {
+                    width: 100%;
+                    margin-left: 0;
+                    padding-left: 30px;
+                    // .header__content {
+                    //     span {
+                    //         font-size: 10px;
+                    //     }
+                    // }
                 }
             }
         }
