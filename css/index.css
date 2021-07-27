@@ -279,22 +279,19 @@ li {
   /* Firefox */
 }
 
-::-ms-input-placeholder {
+:-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #fff;
   opacity: 1;
   /* Firefox */
 }
 
-
 ::-ms-input-placeholder {
-
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #fff;
   opacity: 1;
   /* Firefox */
 }
-
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
