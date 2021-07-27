@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: myfont;
-  src: url("../baocaothuongnien/Quicksand-SemiBold.ttf") format("opentype");
+  src: url(../ketquaSXKD/Quicksand-SemiBold.ttf) format("opentype");
 }
 
 * {
