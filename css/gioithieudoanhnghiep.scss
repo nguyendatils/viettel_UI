@@ -148,27 +148,27 @@ li {
 
         .col-1 {
             width: 30%;
-
+            padding-right: 15px;
             img {
-                height: 300px;
+                height: auto;
+                width: 100%;
             }
 
             #profile-pdf {
                 height: 50px;
                 line-height: 50px;
-                padding-right: 35px;
+                justify-content: space-between;
 
                 span {
                     font-weight: bold;
-                    width: 70%;
                 }
 
                 #pdf-icon {
                     text-align: right;
-                    width: 30%;
 
                     img {
                         height: 35px;
+                        width: auto !important;
                     }
                 }
             }
@@ -177,7 +177,8 @@ li {
             width: 70%;
 
             img {
-                height: 300px;
+                height: auto;
+                width: 100%;
             }
         }
 
@@ -207,9 +208,24 @@ li {
   }
 
 
-@media(max-width: 540px) {
-    .content-table {
-        padding: 0px!important;
+@media(max-width: 600px) {
+    .content-container {
+        padding-right: 40px;
+    }
+    .content-container {
+        .row {
+            display: block;
+            .col-1{
+                width: 100%;
+                padding-right: 0;
+                .row {
+                    display: flex;
+                }
+            }
+            .col-2 {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -228,3 +244,4 @@ li {
         font-size: 14px!important;
     }
 }
+
