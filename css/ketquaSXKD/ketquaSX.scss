@@ -184,7 +184,17 @@
                 .content__page {
                     width: 100%;
                     margin-left: 0;
-                    padding-left: 30px;
+                    padding-left: 0px;
+                }
+            }
+        }
+        @media (max-width:33.75em) {
+            .content__page {
+                .header__content {
+                    font-size: 10px;
+                }
+                .table {
+                    font-size: 10px;
                 }
             }
         }

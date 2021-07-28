@@ -207,7 +207,16 @@ body .container .content__page .table__body-row td.row__more {
   body .container .content__page {
     width: 100%;
     margin-left: 0;
-    padding-left: 30px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 33.75em) {
+  body .content__page .header__content {
+    font-size: 10px;
+  }
+  body .content__page .table {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=ketquaSX.css.map */
