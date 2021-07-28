@@ -116,7 +116,8 @@ body {
             box-sizing: border-box;
             .table {
                 &__header-row {
-                    &-head {
+                    &-year {
+                        width: 30%;
                         padding: 20px 0;
                         font-weight: 700;
                         background-color: $backgroundHeaderTable;
@@ -129,13 +130,21 @@ body {
                             padding-left: 8px;
                         }
                     }
+                    &-head {
+                        width: 17.5%;
+                        padding: 20px 0;
+                        font-weight: 700;
+                        background-color: $backgroundHeaderTable;
+                        text-align: center;
+                    }
                     @mixin attributeColumn {
                         border-bottom: 1px solid #403e3f;
                         font-weight: 700;
                     }
                     &-title {
+                        width: 30%;
                         text-align: left;
-                        padding: 20px 0 20px 8px;
+                        padding: 20px 4px 20px 8px;
                         @include attributeColumn();
                     }
                     &-data {
@@ -173,8 +182,9 @@ body {
             font-size: 12px;
             .table {
                 &__header-row {
+                    flex-wrap: wrap;
                     &-data {
-                        flex-wrap: wrap;
+                        font-size: 8px;
                         padding-left: 8px !important;
                         padding-right: 8px !important;
                     }
@@ -188,6 +198,21 @@ body {
                 li {
                     a {
                         font-size: 9px !important;
+                    }
+                }
+            }
+        }
+        .container {
+            font-size: 10px;
+            .content__page {
+                padding-left: 0;
+                .table {
+                    &__header-row {
+                        flex-wrap: wrap;
+                        &-data {
+                            padding-left: 3px !important;
+                            padding-right: 3px !important;
+                        }
                     }
                 }
             }

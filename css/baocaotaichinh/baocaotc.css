@@ -137,14 +137,15 @@ body .container .content__page {
           box-sizing: border-box;
 }
 
-body .container .content__page .table__header-row-head {
+body .container .content__page .table__header-row-year {
+  width: 30%;
   padding: 20px 0;
   font-weight: 700;
   background-color: #e6e7e9;
   text-align: center;
 }
 
-body .container .content__page .table__header-row-head .year {
+body .container .content__page .table__header-row-year .year {
   width: 100%;
   border: none;
   background-color: #e6e7e9;
@@ -152,9 +153,18 @@ body .container .content__page .table__header-row-head .year {
   padding-left: 8px;
 }
 
+body .container .content__page .table__header-row-head {
+  width: 17.5%;
+  padding: 20px 0;
+  font-weight: 700;
+  background-color: #e6e7e9;
+  text-align: center;
+}
+
 body .container .content__page .table__header-row-title {
+  width: 30%;
   text-align: left;
-  padding: 20px 0 20px 8px;
+  padding: 20px 4px 20px 8px;
   border-bottom: 1px solid #403e3f;
   font-weight: 700;
 }
@@ -195,9 +205,12 @@ body .container .content__page .table__header-row-data {
   body .container {
     font-size: 12px;
   }
-  body .container .table__header-row-data {
+  body .container .table__header-row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  body .container .table__header-row-data {
+    font-size: 8px;
     padding-left: 8px !important;
     padding-right: 8px !important;
   }
@@ -206,6 +219,20 @@ body .container .content__page .table__header-row-data {
 @media (max-width: 30.1875em) {
   body .nav-url__breadcrumb li a {
     font-size: 9px !important;
+  }
+  body .container {
+    font-size: 10px;
+  }
+  body .container .content__page {
+    padding-left: 0;
+  }
+  body .container .content__page .table__header-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .container .content__page .table__header-row-data {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
   }
 }
 /*# sourceMappingURL=baocaotc.css.map */
