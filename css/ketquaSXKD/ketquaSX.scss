@@ -119,11 +119,14 @@
                     line-height: 45px;
                     color: #fff;
                     margin: 0;
+                    border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
                     @mixin border-col-head {
                         border-right: 1px solid #fff;
                     }
                     &-span {
                         background-color: $color-h-content;
+                        border-top-left-radius: 6px;
                         @include border-col-head;
                     }
                     &-input {
@@ -137,7 +140,7 @@
                         background-color: $color-h-content;
                         text-align-last: center;
                         border: none;
-                        border-top-right-radius: 5px;
+                        border-top-right-radius: 6px;
                     }
                 }
                 .table {
