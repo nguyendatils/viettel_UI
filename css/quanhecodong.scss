@@ -31,7 +31,7 @@ li {
 
 
 .nav-url {
-    height: 50px;
+    height: auto;
     background-color: $greyColor;
 
     .container {
@@ -40,6 +40,7 @@ li {
             padding-top: 15px;
             padding-bottom: 15px;
             margin-left: 15px;
+            margin-bottom: 0;
 
             li:not(:first-child)::before {
                 content: "►";
@@ -147,6 +148,9 @@ li {
         height: 35px;
     }
 
+    .row{
+        display: flex;
+    }
     #table-title {
         background-color: #ef0126;
         height: 45px;
@@ -156,8 +160,13 @@ li {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
 
+        img {
+            height: 1.8em;
+        }
+
         #update-time {
             text-align: right;
+            padding-left: 0;
         }
     }
 
@@ -216,7 +225,7 @@ li {
 
         .statistical {
             padding: 0!important;
-
+            width: 50%;
             #table-title-left {
                 background-color: #ef0126;
                 height: 45px;
@@ -224,6 +233,11 @@ li {
                 color: #fff!important;
                 margin: 0;
                 border-top-left-radius: 5px;
+                padding-left: 15px;
+
+                img {
+                    height: 1.8em;
+                }
             }
 
             table {
@@ -250,7 +264,7 @@ li {
 
         .chart {
             padding: 0!important;
-
+            width: 50%;
             #table-title-right {
                 background-color: #e6e7e9;
                 height: 45px;
@@ -296,16 +310,48 @@ li {
     .content-table {
         padding: 0px!important;
     }
+    
 }
 
 @media (max-width: 768px){
     body {
         font-size: 10px!important;
     }
+    .content-table {
+        .row {
+            display: block;
+            .statistical {
+                width: 100% !important;
+
+                #table-title-left {
+                    border-top-right-radius: 5px;
+                }
+            }
+            .chart {
+                width: 100% !important;
+                #table-title-right {
+                    border-top-left-radius: 5px;
+                }
+            }
+        }
+    }
+    
 }
 @media (min-width: 768px){
     body {
         font-size: 12px!important;
+    }
+}
+@media (max-width: 992px){
+    #page-content {
+        .listMenu {
+            .my-ul-menu-lv1 {
+                padding-right: 30px;
+            }
+            .left-divider {
+                margin-right: 30px;
+            }
+        }
     }
 }
 @media (min-width: 992px){

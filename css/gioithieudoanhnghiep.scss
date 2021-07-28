@@ -31,7 +31,7 @@ li {
 
 
 .nav-url {
-    height: 50px;
+    height: auto;
     background-color: $greyColor;
 
     .container {
@@ -40,6 +40,7 @@ li {
             padding-top: 15px;
             padding-bottom: 15px;
             margin-left: 15px;
+            margin-bottom: 0;
 
             li:not(:first-child)::before {
                 content: "►";
@@ -237,6 +238,18 @@ li {
 @media (min-width: 768px){
     body {
         font-size: 12px!important;
+    }
+}
+@media (max-width: 992px){
+    #page-content {
+        .listMenu {
+            .my-ul-menu-lv1 {
+                padding-right: 30px;
+            }
+            .left-divider {
+                margin-right: 30px;
+            }
+        }
     }
 }
 @media (min-width: 992px){

@@ -27,7 +27,7 @@ li {
 }
 
 .nav-url {
-  height: 50px;
+  height: auto;
   background-color: #e6e7e9;
 }
 
@@ -36,6 +36,7 @@ li {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-left: 15px;
+  margin-bottom: 0;
 }
 
 .nav-url .container .breadcrumb li:not(:first-child)::before {
@@ -329,6 +330,15 @@ select:focus {
 @media (min-width: 768px) {
   body {
     font-size: 12px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  #page-content .listMenu .my-ul-menu-lv1 {
+    padding-right: 30px;
+  }
+  #page-content .listMenu .left-divider {
+    margin-right: 30px;
   }
 }
 
