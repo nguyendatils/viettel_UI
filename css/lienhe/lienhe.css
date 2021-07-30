@@ -1,0 +1,322 @@
+@charset "UTF-8";
+@font-face {
+  font-family: myfont;
+  src: url(../lienhe/Quicksand-SemiBold.ttf) format("opentype");
+}
+
+* {
+  font-family: myfont;
+}
+
+body {
+  color: #5a574f !important;
+  height: 100%;
+  margin: 0;
+  font-size: 13px;
+}
+
+body li {
+  list-style: none;
+}
+
+body .nav-url {
+  height: 50px;
+  background-color: #e6e7e9;
+}
+
+body .nav-url__breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e6e7e9;
+  margin-top: 8px;
+}
+
+body .nav-url__breadcrumb li:not(:first-child)::before {
+  content: "►";
+  color: #3e3e3f;
+}
+
+body .nav-url__breadcrumb .nav-item {
+  text-decoration: none;
+  margin: auto;
+}
+
+body .nav-url__breadcrumb .pre-page {
+  color: #403e3f;
+}
+
+body .nav-url__breadcrumb .pre-page:hover {
+  color: #ef0126;
+}
+
+body .nav-url__breadcrumb .this-page {
+  color: #ef0126;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .menu {
+  width: 256px;
+  margin-top: 40px;
+}
+
+body .container .menu .left-divider-top {
+  border: 2px solid #797878;
+  margin-left: 38px;
+}
+
+body .container .menu .left-divider {
+  border-top: 1px solid #585856;
+}
+
+body .container .menu__ul-item {
+  padding: 10px 6px 10px 0px;
+}
+
+body .container .menu__ul-item.active a {
+  color: #ef0126;
+}
+
+body .container .menu__ul-item a {
+  color: #818181;
+  text-decoration: none;
+}
+
+body .container .menu__ul-item a:hover {
+  color: #ef0126;
+}
+
+body .container .menu__dropdown-btn {
+  text-decoration: none;
+  color: #818181;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  padding-left: 0 !important;
+}
+
+body .container .menu__dropdown-btn:hover {
+  color: #ef0126;
+}
+
+body .container .menu__dropdown-btn.active {
+  color: #ef0126;
+}
+
+body .container .menu__dropdown-btn.active::after {
+  content: "\2212";
+  float: right;
+}
+
+body .container .menu__dropdown-btn::after {
+  content: "\002B";
+  float: right;
+}
+
+body .container .menu .dropdown-container {
+  display: none;
+}
+
+body .container .menu .dropdown-container ul {
+  padding-left: 10px;
+}
+
+body .container .content__page {
+  width: 828px;
+  margin-top: 40px;
+  margin-left: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .container .content__page .header__content {
+  background-color: #ef0126;
+  height: 43px;
+  line-height: 45px;
+  color: #fff;
+  margin: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-bottom: 25px;
+}
+
+body .container .content__page .header__content-span {
+  width: 100%;
+  padding-left: 10px;
+  background-color: #ef0126;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+body .container .content__page .header__content-span img {
+  padding: 4px 8px 0 0;
+}
+
+body .container .content__page .contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .content__page .contact__way {
+  width: 40%;
+  height: 100%;
+  margin-right: 15px;
+}
+
+body .container .content__page .contact__way-img img {
+  width: 100%;
+  height: auto;
+}
+
+body .container .content__page .contact__way-element {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 8px;
+}
+
+body .container .content__page .contact__way-element .element-item {
+  width: 50px;
+  height: 50px;
+  background-color: #ebe4e4;
+  text-align: center;
+  padding-top: 12px;
+  border-radius: 5px;
+}
+
+body .container .content__page .contact__way-element .element-item.email {
+  background-color: #ef0126;
+}
+
+body .container .content__page .contact__way-paragraph {
+  margin-top: 10px;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .content__page .contact__way-paragraph span {
+  font-size: 12px;
+  text-align: center;
+}
+
+body .container .content__page .contact__form {
+  width: 60%;
+  height: 100%;
+  margin-left: 15px;
+  margin-bottom: 60px;
+  font-size: 11px;
+  position: relative;
+}
+
+body .container .content__page .contact__form .form__input {
+  background-color: #ebe4e4;
+  border-radius: 6px;
+  padding: 15px 10px;
+  width: 100%;
+  outline: none;
+}
+
+body .container .content__page .contact__form p {
+  padding-top: 8px;
+  padding-left: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  color: red;
+}
+
+body .container .content__page .contact__form p.code {
+  color: black;
+  font-weight: 400;
+}
+
+body .container .content__page .contact__form .btn_user {
+  background-color: #EF0126;
+  color: #fff;
+  position: absolute;
+  font-size: 11px;
+  right: 0;
+  margin-right: 30px;
+}
+
+body .container .content__page .contact__message {
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+body .container .content__page .contact__message .content__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #d8d2d2;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container .content__page .contact__message .content__message .form__message {
+  width: 60%;
+}
+
+body .container .content__page .contact__message .content__message .form__message .form__input {
+  background-color: #ebe4e4;
+}
+
+body .container .content__page .contact__message .content__message .form__message form {
+  padding: 20px 20px;
+}
+
+body .container .content__page .contact__message .content__message .capcha {
+  width: 40%;
+  padding: 20px 15px 0 15px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .content__page .contact__message .content__message .capcha p {
+  position: relative;
+  left: 150px;
+  font-size: 11px;
+  padding-right: 15px;
+  color: red;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+body .container .content__page .contact__message .content__message .capcha button {
+  position: relative;
+  left: 215px;
+  width: 85px;
+  height: 30px;
+  background-color: #EF0126;
+  color: #fff;
+  font-size: 11px;
+}
+/*# sourceMappingURL=lienhe.css.map */
