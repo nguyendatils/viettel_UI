@@ -110,6 +110,11 @@ body {
         $color-h-content:#ef0126;
         $text-color:#ef0126;
         $color-form-input: #ebe4e4;
+        @mixin font-placeholder {
+            font-size: 11px;
+            font-style: italic;
+            color: #5a574f;
+        }
         .content__page {
             width: 828px;
             margin-top: 40px;
@@ -189,6 +194,9 @@ body {
                         padding: 15px 10px;
                         width: 100%;
                         outline: none;
+                        &::placeholder {
+                            @include font-placeholder();
+                        }
                     }
                     p {
                         padding-top: 8px;
@@ -215,6 +223,7 @@ body {
                 width: 100%;
                 margin-bottom: 200px;
                 .content__message {
+                    width: 100%;
                     display: flex;
                     border: 1px solid #d8d2d2;
                     border-radius: 8px;
@@ -224,6 +233,9 @@ body {
                         width: 60%;
                         .form__input {
                             background-color: $color-form-input;
+                            &::placeholder {
+                                @include font-placeholder();
+                            }
                         }
                         form {
                             padding: 20px 20px;
@@ -233,7 +245,6 @@ body {
                         width: 40%;
                         padding: 20px 15px 0 15px;
                         margin-bottom: 20px;
-                        display: flex;
                         flex-direction: column;
                         p {
                             position: relative;
