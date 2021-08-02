@@ -5,202 +5,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="css/baocaotaichinh.css"> -->
-    <link rel="stylesheet" href="css/baocaotaichinh.css">
+    <title>Báo cáo tài chính</title>
+    <link rel="stylesheet" href="css/baocaotaichinh/baocaotc.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 
 <body id="body">
-    <div id="content">
-        <div>
-            <nav class="nav-url">
-                <div class="container">
-                    <ul class="breadcrumb">
-                        <li><a href="#" class="pre-page pre-page-before nav-item">Trang chủ</a></li>
-                        <li><a href="#" class="pre-page pre-page-before nav-item">Quan hệ cổ đông</a></li>
-                        <li><a href="#" class="pre-page pre-page-before nav-item">Thông tin tài chính</a></li>
-                        <li><a href="#" class="this-page this-page-after nav-item">Báo cáo tài chính</a></li>
-                    </ul>
-                </div>
-            </nav>
+
+    <nav class="nav-url">
+        <div class="container">
+            <ul class="breadcrumb nav-url__breadcrumb">
+                <li><a href="#" class="pre-page pre-page-before nav-item">Trang chủ</a></li>
+                <li><a href="#" class="pre-page pre-page-before nav-item">Quan hệ cổ đông</a></li>
+                <li><a href="#" class="pre-page pre-page-before nav-item">Thông tin tài chính</a></li>
+                <li><a href="#" class="this-page this-page-after nav-item">Báo cáo tài chính</a></li>
+            </ul>
         </div>
-        <div class="container" id="page-content">
+    </nav>
 
-            <div id="myMenu" class="listMenu col-md-3">
+    <div class="container">
+
+        <!-- =============================List Menu =========================== -->
+        <div class="menu">
+            <div class="left-divider-top"></div>
+            <ul class="menu__ul-lv1">
+                <li class="menu__ul-item"><a href="#">Giới thiệu doanh nghiệp</a></li>
                 <div class="left-divider"></div>
-                <ul class="my-ul-menu-lv1">
-                    <li><a href="#">Giới thiệu doanh nghiệp</a></li>
+                <!-- Button Thông tin tài chính -->
+                <button class="dropdown-btn menu__dropdown-btn menu__ul-item active">Thông tin tài chính</button>
 
-                    <!-- Button Thông tin tài chính -->
-                    <button class="dropdown-btn">Thông tin tài chính</button>
-                    <div class="dropdown-container">
-                        <ul class="my-ul-menu-lv2">
-                            <li><a href="#">▶ Thông tin nổi bật</a></li>
-                            <div class="row"></div>
-                            <li><a href="#">▶ Báo cáo tài chính</a></li>
-                            <div class="row"></div>
-                            <li><a href="#">▶ Kết quả XSKD</a></li>
-                        </ul>
-                    </div>
-                    <li><a class="" href="#">Đại hội đồng cổ đông</a></li>
-                    <li><a class="" href="#">Báo cáo thường niên</a></li>
-                    <li><a class="" href="#">Công bố thông tin</a></li>
-
-                    <!-- Button thông tin cổ đông -->
-                    <button class="dropdown-btn">Thông tin cổ đông</button>
-                    <div class="dropdown-container my-border">
-                        <ul class="my-ul-menu-lv2">
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Button Quản trị kinh doanh -->
-                    <button class="dropdown-btn">Quản trị doanh nghiệp</button>
-                    <div class="dropdown-container">
-                        <ul class="my-ul-menu-lv2">
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                        </ul>
-                    </div>
-                    <li><a class="" href="#">Liên hệ</a></li>
-                </ul>
-            </div>
-            <label for="menu-input-checkbox-bar" class="listMenu__icon">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
-            </label>
-
-            <input type="checkbox" hidden class="checkbox-bar" name="" id="menu-input-checkbox-bar">
-            <label for="menu-input-checkbox-bar" class="listMenu__overlay"></label>
-
-            <div class="listMenu__mobile-nav">
-
-                <label for="menu-input-checkbox-bar" class="mobile-nav-icon-close">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
-                </label>
-
-                <nav class="navbar__list">
-                    <div class="navbar__list-header"></div>
-                    <ul class="listMenu__mobile-list">
-                        <li class="mobile-li"><a href="#">Giới thiệu doanh nghiệp</a></li>
-                        <div class="border__item-mobile"></div>
-
-                        <!-- Button Thông tin tài chính -->
-                        <button class="dropdown-btn mobile-li">Thông tin tài chính</button>
-                        <div class="dropdown-container">
-                            <ul class="my-ul-menu-lv2">
-                                <li class="mobile-li"><a href="#">▶ Thông tin nổi bật</a></li>
-                                <div class="row"></div>
-                                <li class="mobile-li"><a href="#">▶ Báo cáo tài chính</a></li>
-                                <div class="row"></div>
-                                <li class="mobile-li"><a href="#">▶ Kết quả XSKD</a></li>
-                            </ul>
-                        </div>
-                        <li class="mobile-li"><a class="" href="#">Đại hội đồng cổ đông</a></li>
-                        <li class="mobile-li"><a class="" href="#">Báo cáo thường niên</a></li>
-                        <li class="mobile-li"><a class="" href="#">Công bố thông tin</a></li>
-
-                        <!-- Button thông tin cổ đông -->
-                        <button class="dropdown-btn mobile-li">Thông tin cổ đông</button>
-                        <div class="dropdown-container my-border">
-                            <ul class="my-ul-menu-lv2">
-                                <li class="mobile-li"><a href="#">Link 1</a></li>
-                                <li class="mobile-li"><a href="#">Link 2</a></li>
-                                <li class="mobile-li"><a href="#">Link 3</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Button Quản trị kinh doanh -->
-                        <button class="dropdown-btn mobile-li">Quản trị doanh nghiệp</button>
-                        <div class="dropdown-container">
-                            <ul class="my-ul-menu-lv2">
-                                <li class="mobile-li"><a href="#">Link 1</a></li>
-                                <li class="mobile-li"><a href="#">Link 2</a></li>
-                                <li class="mobile-li"><a href="#">Link 3</a></li>
-                            </ul>
-                        </div>
-                        <li class="mobile"><a class="" href="#">Liên hệ</a></li>
+                <div class="dropdown-container menu__dropdown-container" style="display: block;">
+                    <ul class="menu__ul-lv2">
+                        <div class="left-divider"></div>
+                        <li class="menu__ul-item"><a href="#">▶ Thông tin nổi bật</a></li>
+                        <div class="left-divider"></div>
+                        <li class="menu__ul-item active"><a href="#">▶ Báo cáo tài chính</a></li>
+                        <div class="left-divider"></div>
+                        <li class="menu__ul-item "><a href="#">▶ Kết quả XSKD</a></li>
                     </ul>
-                </nav>
-
-            </div>
-
-
-
-
-            <class class="col-md-9 content-table">
-
-
-                <div class="row" id="search-bar">
-                    <select class="col-xs-4 form-select-lg header__item
-                    " id="search-year">
-                        <option >Năm</option>
-                        <option selected value="1" class="option">Năm 2021</option>
-                        <option value="2" class="option">Năm 2020</option>
-                        <option value="3" class="option">Năm 2019</option>
-                    </select>
-                    <div class="col-xs-2 header__item">
-                        <span>Quý I</span>
-                    </div>
-                    <div class="col-xs-2 header__item" id="">
-                        <span>Quý II</span>
-                    </div>
-                    <div class="col-xs-2 header__item" id="">
-                        <span>Quý III</span>
-                    </div>
-                    <div class="col-xs-2 header__item span_quyIV-1" id="">
-                        <span>Quý IV/cả năm</span>
-                    </div>
-                    <div class="col-xs-2 header__item span_quyIV-2" id="">
-                        <span>Quý IV</span>
-                    </div>
-
-
                 </div>
-                <table class="table content-table">
-                    <tbody>
-                        <tr class="row-ha">
-                            <td class="title col-xs-4">BÁO CÁO TÀI CHÍNH HỢP NHẤT</td>
-                            <td class="time">T2, 28/06/2021</td>
-                            <td class="time">T2, 28/06/2021</td>
-                            <td class="time">T2, 28/06/2021</td>
-                            <td class="time">T2, 28/06/2021</td>
-                        </tr>
-                        <tr class="row-ha">
-                            <td class="title col-xs-2">BÁO CÁO TÀI CHÍNH RIÊNG</td>
-                            <td class="time">T2, 28/06/2021</td>
-                            <td class="time">T2, 28/06/2021</td>
-                            <td class="time">T2, 28/06/2021</td>
-                            <td class="time">T2, 28/06/2021</td>
+                <div class="left-divider"></div>
+                <li class="menu__ul-item"><a class="" href="#">Đại hội đồng cổ đông</a></li>
+                <div class="left-divider"></div>
+                <li class="menu__ul-item"><a class="" href="#">Báo cáo thường niên</a></li>
+                <div class="left-divider"></div>
+                <li class="menu__ul-item"><a class="" href="#">Công bố thông tin</a></li>
+                <div class="left-divider"></div>
 
-                        </tr>
-                        <tr class="row-ha">
-                            <td class="title col-xs-2">THÔNG BÁO KẾT QUẢ SXKD</td>
-                            <td class="time">T2, 28/06/2021</td>
-                            <td class="time">T2, 28/06/2021</td>
-                            <td class="time">T2, 28/06/2021</td>
-                            <td class="time">T2, 28/06/2021</td>
+                <!-- Button thông tin cổ đông -->
+                <button class="dropdown-btn menu__dropdown-btn menu__ul-item">Thông tin cổ đông</button>
 
-                        </tr>
-                        <tr class="row-ha">
-                            <td class="title col-xs-2">GIẢI TRÌNH BÁO CÁO KẾT QUẢ SXKD</td>
-                            <td class="time"></td>
-                            <td class="time"></td>
-                            <td class="time"></td>
-                            <td class="time">T2, 28/06/2021</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="table-divider"></div>
+                <div class="dropdown-container">
+                    <ul class="menu__ul-lv2">
+                        <div class="left-divider"></div>
+                        <li class="menu__ul-item"><a href="#">Link 1</a></li>
+                        <div class="left-divider"></div>
+                        <li class="menu__ul-item"><a href="#">Link 2</a></li>
+                        <div class="left-divider"></div>
+                        <li class="menu__ul-item"><a href="#">Link 3</a></li>
 
-            </class>
+                    </ul>
+                </div>
+                <div class="left-divider"></div>
+                <button class="dropdown-btn menu__dropdown-btn menu__ul-item">Quản trị doanh nghiệp</button>
+
+                <div class="dropdown-container">
+                    <ul class="menu__ul-lv2">
+                        <div class="left-divider"></div>
+                        <li class="menu__ul-item"><a href="#">Link 1</a></li>
+                        <div class="left-divider"></div>
+
+                        <li class="menu__ul-item"><a href="#">Link 2</a></li>
+                        <div class="left-divider"></div>
+                        <li class="menu__ul-item"><a href="#">Link 3</a></li>
+
+                    </ul>
+                </div>
+                <div class="left-divider"></div>
+                <li class="menu__ul-item"><a class="" href="#">Liên hệ</a></li>
+                <div class="left-divider"></div>
+            </ul>
+        </div>
+        <!-- ===================================End List Menu ====================== -->
+
+
+
+        <!-- =====================================Table in page =========================== -->
+
+        <div class="content__page">
+
+            <table class="table">
+                <thead class="table__header">
+                    <tr class="table__header-row">
+                        <td class="table__header-row-year">
+                            <select name="year" class="center form-select-lg year">
+                                    <option >Năm</option>
+                                    <option selected value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2019</option>
+                                </select>
+                        </td>
+                        <td class="table__header-row-head">Quý I</td>
+                        <td class="table__header-row-head">Quý II</td>
+                        <td class="table__header-row-head">Quý III</td>
+                        <td class="table__header-row-head">Quý IV</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table__header-row">
+
+                        <td class=" table__header-row-title">BÁO CÁO TÀI CHÍNH HỢP NHẤT</td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+
+
+                    </tr>
+                    <tr class="table__header-row">
+                        <td class=" table__header-row-title">BÁO CÁO TÀI CHÍNH RIÊNG</td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+
+                    </tr>
+                    <tr class="table__header-row">
+                        <td class=" table__header-row-title">THÔNG BÁO KẾT QUẢ SXKD</td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+
+                    </tr>
+                    <tr class="table__header-row">
+                        <td class=" table__header-row-title">GIẢI TRÌNH BÁO CÁO KẾT QUẢ SXKD</td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+                        <td class="table__header-row-data"><i class="far fa-calendar-check"></i> 28/06/2021 </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <!-- =================================End table============================ -->
         </div>
     </div>
     </div>

@@ -1,6 +1,6 @@
     @font-face {
         font-family: myfont;
-        src: url('../baocaothuongnien/Quicksand-SemiBold.ttf') format("opentype");
+        src: url(../ketquaSXKD/Quicksand-SemiBold.ttf) format("opentype");
     }
     
     * {
@@ -119,11 +119,14 @@
                     line-height: 45px;
                     color: #fff;
                     margin: 0;
+                    border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
                     @mixin border-col-head {
                         border-right: 1px solid #fff;
                     }
                     &-span {
                         background-color: $color-h-content;
+                        border-top-left-radius: 6px;
                         @include border-col-head;
                     }
                     &-input {
@@ -137,7 +140,7 @@
                         background-color: $color-h-content;
                         text-align-last: center;
                         border: none;
-                        border-top-right-radius: 5px;
+                        border-top-right-radius: 6px;
                     }
                 }
                 .table {
@@ -153,6 +156,7 @@
                                 border-bottom: 1px solid #585856;
                                 &.row__paragraph {
                                     text-align: left;
+                                    padding-left: 0;
                                 }
                                 &.row__time {
                                     @include row_time_more();
@@ -164,6 +168,36 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        @media (max-width:61.9375em) {
+            .container {
+                flex-direction: column;
+                font-size: 12px;
+                .menu {
+                    width: 100%;
+                    .left-divider-top {
+                        margin-left: 30px !important;
+                    }
+                    &__ul-lv1 {
+                        padding-left: 30px;
+                    }
+                }
+                .content__page {
+                    width: 100%;
+                    margin-left: 0;
+                    padding-left: 0px;
+                }
+            }
+        }
+        @media (max-width:33.75em) {
+            .content__page {
+                .header__content {
+                    font-size: 10px;
+                }
+                .table {
+                    font-size: 10px;
                 }
             }
         }
