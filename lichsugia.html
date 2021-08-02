@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch sử giá</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/lichsugia.css"/>
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <div content>
+        <div>
+            <nav class="nav-url">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="#" class="pre-page">Trang chủ</a></li>
+                        <li><a href="#" class="pre-page">Thông tin cổ đông</a></li>
+                        <li><a href="#" class="this-page">Lịch sử giá</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container" id="page-content">
+            <div id="myMenu" class="listMenu col-md-3">
+                <ul class="my-ul-menu-lv1">
+                    <li><a href="#">Giới thiệu doanh nghiệp</a></li>
+        
+                    <!-- Button Thông tin tài chính -->
+                    <button class="dropdown-btn">Thông tin tài chính</button>
+                    <div class="dropdown-container">
+                        <ul class="my-ul-menu-lv2">
+                            <li><a href="#">Link 1</a></li>
+                            <div class="row"></div>
+                            <li><a href="#">Link 2</a></li>
+                            <div class="row"></div>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <li><a class="" href="#">Đại hội đồng cổ đông</a></li>
+                    <li><a class="" href="#">Báo cáo thường niên</a></li>
+                    <li><a class="" href="http://127.0.0.1:5500/UI/index.html">Công bố thông tin</a></li>
+        
+                    <!-- Button thông tin cổ đông -->
+                    <button class="dropdown-btn">Thông tin cổ đông</button>
+                    <div class="dropdown-container my-border">
+                        <ul class="my-ul-menu-lv2">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Button Quản trị kinh doanh -->
+                    <button class="dropdown-btn">Quản trị doanh nghiệp</button>
+                    <div class="dropdown-container">
+                        <ul class="my-ul-menu-lv2">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>
+                    <li><a class="" href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 content-container">
+                <div id="table-title">
+                    <div class="news-title" id="title">
+                        <img src="static/icons/Icon-06.png" alt="">
+                        <span>LỊCH SỬ GIÁ - MÃ CTR</span>
+                    </div>
+                    <div class="news-title" id="update-time">
+                        <span>Cập nhật mới nhất: 14/7/2021</span>
+                    </div>
+                </div>
+                <div id="search-box">
+                    <div class="search-title"><span>Tìm theo ngày</span></div>
+                    <div class="from">
+                        <div>Từ ngày</div>
+                        <input type="date" name="from-date" value="MM/DD/YYYY">
+                    </div>
+                    <div class="to">
+                        <div>Đến ngày</div>
+                        <input type="date" name="to-date" value="MM/DD/YYYY">
+                    </div>
+                    <div class="search-btn">
+                        <a href=""><button class="btn btn-sm btn-default">Tìm kiếm</button></a>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Ngày</th>
+                                <th>Giá mở cửa</th>
+                                <th>Giá cao nhất trong ngày</th>
+                                <th>Giá thấp nhất trong ngày</th>
+                                <th>Giá đóng cửa</th>
+                                <th>Khối lượng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>13/07/2021 </td>
+                                <td>50,40</td>
+                                <td>51,80</td>
+                                <td>49,25</td>
+                                <td>51,80 </td>
+                                <td>1.246.700,00</td>
+                            </tr>
+                            <tr>
+                                <td>13/07/2021 </td>
+                                <td>50,40</td>
+                                <td>51,80</td>
+                                <td>49,25</td>
+                                <td>51,80 </td>
+                                <td>1.246.700,00</td>
+                            </tr>
+                            <tr>
+                                <td>13/07/2021 </td>
+                                <td>50,40</td>
+                                <td>51,80</td>
+                                <td>49,25</td>
+                                <td>51,80 </td>
+                                <td>1.246.700,00</td>
+                            </tr>
+                            <tr>
+                                <td>13/07/2021 </td>
+                                <td>50,40</td>
+                                <td>51,80</td>
+                                <td>49,25</td>
+                                <td>51,80 </td>
+                                <td>1.246.700,00</td>
+                            </tr>
+                            <tr>
+                                <td>13/07/2021 </td>
+                                <td>50,40</td>
+                                <td>51,80</td>
+                                <td>49,25</td>
+                                <td>51,80 </td>
+                                <td>1.246.700,00</td>
+                            </tr>
+                            <tr>
+                                <td>13/07/2021 </td>
+                                <td>50,40</td>
+                                <td>51,80</td>
+                                <td>49,25</td>
+                                <td>51,80 </td>
+                                <td>1.246.700,00</td>
+                            </tr>
+                            <tr>
+                                <td>13/07/2021 </td>
+                                <td>50,40</td>
+                                <td>51,80</td>
+                                <td>49,25</td>
+                                <td>51,80 </td>
+                                <td>1.246.700,00</td>
+                            </tr>
+                            <tr>
+                                <td>13/07/2021 </td>
+                                <td>50,40</td>
+                                <td>51,80</td>
+                                <td>49,25</td>
+                                <td>51,80 </td>
+                                <td>1.246.700,00</td>
+                            </tr>
+                            <tr>
+                                <td>13/07/2021 </td>
+                                <td>50,40</td>
+                                <td>51,80</td>
+                                <td>49,25</td>
+                                <td>51,80 </td>
+                                <td>1.246.700,00</td>
+                            </tr>
+                            <tr>
+                                <td>13/07/2021 </td>
+                                <td>50,40</td>
+                                <td>51,80</td>
+                                <td>49,25</td>
+                                <td>51,80 </td>
+                                <td>1.246.700,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).on('click', 'ul li', function() {
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+
+        var acc = document.getElementsByClassName("dropdown-btn");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContainer = this.nextElementSibling;
+                if (dropdownContainer.style.display === "block") {
+                    dropdownContainer.style.display = "none";
+                } else {
+                    dropdownContainer.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

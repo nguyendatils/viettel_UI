@@ -8,7 +8,7 @@ $greyColor : #e6e7e9;
 }
 
 *{
-    font-family: myfont!important;
+    font-family: myfont;
 }
 
 html, body {
@@ -141,30 +141,33 @@ li {
     }
 }
 
-.content-table {
+.content-container {
     padding: 0 45px 0 40px!important;
-
-    .table-divider {
-        height: 35px;
-    }
-
-    .row{
-        display: flex;
-    }
     #table-title {
+        display: flex;
         background-color: #ef0126;
-        height: 45px;
         line-height: 45px;
         color: #fff!important;
         margin: 0;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        #title {
+            width: 70.8%;
+            display: flex;
+            justify-content: space-between !important;
+            padding-right: 15px;
+            border-right: 1px solid #fff;
+        }
 
         img {
             height: 1.8em;
         }
 
         #update-time {
+            width: 29%;
             text-align: right;
             padding-left: 0;
         }
@@ -172,6 +175,12 @@ li {
 
     #ctr-table {
         margin-bottom: 0;
+        margin-bottom: 40px;
+
+        .ember {
+            color: #f7931d;
+            font-weight: bold;
+        }
 
         @mixin td-th {
             border: 1px solid #fff;
@@ -220,136 +229,202 @@ li {
         }
     }
 
-    .row {
-        margin: 0!important;
+    #chart-search {
+        display: flex;
+        line-height: 45px;
+        background-color: $redColor;
+        color: #fff;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
 
-        .statistical {
-            padding: 0!important;
-            width: 50%;
-            #table-title-left {
-                background-color: #ef0126;
-                height: 45px;
-                line-height: 45px;
-                color: #fff!important;
-                margin: 0;
-                border-top-left-radius: 5px;
+        .search-1 {
+            display: flex;
+            width: 70%;
+            .chart-title {
+                width: 25%;
+                border-right: 1px solid #fff;
                 padding-left: 15px;
-
+    
                 img {
                     height: 1.8em;
                 }
             }
-
-            table {
-                td {
-                    padding-top: 5px;
-                    padding-bottom: 5px;
+            
+            .search-2 {
+                display: flex;
+                width: 75%;
+                .select-1 {
+                    display: flex;
+                    width: 45%;
+                    border-right: 1px solid #fff;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    justify-content: space-between;
+        
+                    select {
+                        background-color: $redColor;
+                        border: none;
+                    }
+                    select:focus {
+                        outline: none;
+                    }
                 }
-                .row-1 {
-                    background-color: #e6e7e9;
-                }
-                .row-2 {
-                    background-color: #f7f7f8;
-                }
-                .col-1 {
-                    padding-left: 14px!important;
-                }
-                .col-2 {
-                    text-align: right;
-                    font-weight: bold;
-                    padding-right: 1.5rem!important;
+                .select-2 {
+                    display: flex;
+                    width: 55%;
+                    border-right: 1px solid #fff;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    justify-content: space-between;
+        
+                    select {
+                        background-color: $redColor;
+                        border: none;
+                    }
+                    select:focus {
+                        outline: none;
+                    }
                 }
             }
         }
 
-        .chart {
-            padding: 0!important;
-            width: 50%;
-            #table-title-right {
-                background-color: #e6e7e9;
-                height: 45px;
-                line-height: 45px;
-                margin: 0;
-                border-top-right-radius: 5px;
-
-                .red {
-                    color: #ef0126!important;
-                }
-                
-                .ember {
-                    color: #f7931d!important;
-                }
+        
+        .ctr-info {
+            width: 30%;
+            background-color: #e6e7e9;
+            padding-left: 15px;
+            
+            .red {
+                color: $redColor;
+                font-weight: bold;
+            }
+            .ember {
+                color: #f7931d;
+                font-weight: bold;
             }
         }
     }
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #fff;
-    opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #fff;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #fff;
-  }
-
-  input:focus {
-      outline: none;
-  }
-
-  select:focus {
-      outline: none;
-  }
-
-
 @media(max-width: 540px) {
-    .content-table {
+    .content-container {
         padding: 15px!important;
-    }
+
+        #search-box {
+            display: block;
+            .search-title {
+                display: none;
+            }
+            .from {
+                width: 50%;
+                display: inline-block;
+                input {
+                    width: 100%;
+                }
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+            .to {
+                width: 45%;
+                display: inline-block;
+                input {
+                    width: 100%;
+                }
+            }
+            .search-btn {
+                width: 100%;
+                text-align: center;
+                padding-top: 1em;
+            }
+        }
+        #table-title {
+            display: block;
+            #title {
+                border-bottom: 1px solid #fff;
+                width: 100% !important;
+                border-right: none;
+            }
+            #update-time {
+                text-align: left;
+                width: 100% !important;
+            }
+        }
+
+        #chart-search {
+            display: block;
+            .search-1 {
+                display: block;
+                .chart-title {
+                    width: 100% !important;
+                    border-right: none;
+                    border-bottom: 1px solid #fff;
+                }
     
+                .search-2 {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    #page-content {
+        .listMenu {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+    }
 }
 
 @media (max-width: 768px){
     body {
-        font-size: 10px!important;
+        font-size: 12px!important;
     }
-    .content-table {
-        .row {
-            display: block;
-            .statistical {
-                width: 100% !important;
 
-                #table-title-left {
-                    border-top-right-radius: 5px;
+    .content-container {
+        #table-title {
+            #title {
+                width: 60%;
+            }
+            #update-time {
+                width: 40%;
+            }
+        }
+        #chart-search {
+            display: block;
+            .search-1 {
+                width: 100%;
+                .chart-title {
+                    width: 30%;
+                }
+    
+                .search-2 {
+                    width: 70%;
                 }
             }
-            .chart {
-                width: 100% !important;
-                #table-title-right {
-                    border-top-left-radius: 5px;
-                }
+            .ctr-info {
+                width: 100%;
             }
         }
     }
-    
 }
 @media (min-width: 768px){
     body {
-        font-size: 12px!important;
+        font-size: 13px!important;
     }
 }
 @media (max-width: 992px){
     #page-content {
         .listMenu {
+            padding-left: 40px;
+            padding-right: 45px;
             .my-ul-menu-lv1 {
-                padding-right: 30px;
+                padding-right: 10px;
+                padding-left: 10px;
+                border: 1px solid #c9c8c9;
+                background-color: #fdfdfd;
+                margin-bottom: 20px;
             }
             .left-divider {
-                margin-right: 30px;
+                margin-right: 10px;
             }
         }
     }
