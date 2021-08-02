@@ -1,0 +1,242 @@
+$redColor : #ef0126;
+$greyColor : #e6e7e9;
+
+
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/Quicksand-SemiBold.ttf) format("opentype");
+}
+
+*{
+    font-family: myfont;
+}
+
+html, body {
+    color: #5a574f!important;
+    height: 100%;
+    margin: 0;
+}
+
+ul li a:hover {
+    text-decoration: none;
+}
+
+ul li.active a {
+    color: #da2121;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.nav-url {
+    height: auto;
+    background-color: $greyColor;
+
+    .container {
+        .breadcrumb {
+            background-color: $greyColor;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-left: 15px;
+            margin-bottom: 0;
+
+            li:not(:first-child)::before {
+                content: "►";
+                color: #3e3e3f;
+            }
+
+            li {
+                .this-page {
+                    color: $redColor;
+                }
+                .pre-page {
+                    color: #403e3f;
+                }
+                .pre-page:hover {
+                    color: $redColor;
+                }
+            }
+        }
+    }
+}
+
+#page-content {
+    padding: 40px 0 0 0;
+    justify-content: space-between;
+
+    .listMenu {
+        height: 100%;
+        top: 0;
+        left: 0;
+        /* font-size: 15px; */
+        background-color: #fff;
+
+        @mixin a-btn {
+            padding: 10px 6px 10px 0px;
+            text-decoration: none;
+            color: #818181;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+        }
+
+        a {
+            @include a-btn;
+        }
+        a:hover{
+            color: $redColor;
+        }
+
+        .left-divider {
+            border-top: 4px solid #c9c5c0;
+            margin-left: 30px;
+        }
+        .dropdown-btn{
+            @include a-btn;
+        }
+        .dropdown-btn::after{
+            content: "\002B";
+            float: right;
+        }
+        .dropdown-btn.active {
+            color: $redColor;
+        }
+        .dropdown-btn.active::after{
+            content: "\2212";
+            float: right;
+        }
+        .dropdown-btn:hover {
+            color: $redColor;
+        }
+
+        .dropdown-container {
+            display: none;
+            padding-left: 0px;
+
+            .my-ul-menu-lv2 {
+                padding-left: 0;
+
+                li {
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        button {
+            border-bottom: 1px solid #c9c5c0!important;
+        }
+
+        ul  {
+            padding-left: 30px;
+            li {
+                border-bottom: 1px solid #c9c5c0!important;
+            }
+        }
+    }
+}
+
+.content-table {
+    padding: 0 45px 0 40px!important;
+
+    table {
+        border: 1px solid #fff !important;
+        thead {
+            tr {
+                background-color: $redColor;
+                color: #fff;
+                
+                th {
+                    text-align: center;
+                    vertical-align: middle;
+                    font-weight: lighter !important;
+                    border: 1px solid #fff !important;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+
+                    select {
+                        background-color: $redColor;
+                        color: #fff;
+                        border: none;
+                    }
+                    select:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    text-align: center;
+                    border: 1px solid #fff !important;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            tr:nth-child(odd) {
+                td {
+                    background-color: #e6e7e9;
+                }
+            }
+            tr:nth-child(even) {
+                td {
+                    background-color: #f7f7f8;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 540px) {
+    .content-table {
+        padding: 15px!important;
+    }
+    #page-content {
+        .listMenu {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    body {
+        font-size: 12px!important;
+    }
+}
+@media (min-width: 768px){
+    body {
+        font-size: 13px!important;
+    }
+}
+@media (max-width: 992px){
+    #page-content {
+        .listMenu {
+            padding-left: 40px;
+            padding-right: 45px;
+            .my-ul-menu-lv1 {
+                padding-right: 10px;
+                padding-left: 10px;
+                border: 1px solid #c9c8c9;
+                background-color: #fdfdfd;
+                margin-bottom: 20px;
+            }
+            .left-divider {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+@media (min-width: 992px){
+    body {
+        font-size: 14px!important;
+    }
+}
